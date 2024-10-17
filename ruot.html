@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designs Virtual Art Gallery</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ff4500;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        #gallery {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .art-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .art-item:hover {
+            transform: scale(1.05);
+        }
+
+        .art-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .art-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .art-item p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .art-item button {
+            background-color: #ff4500;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .art-item button:hover {
+            background-color: #e43f00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: #333;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .pagination a:hover {
+            background-color: #444;
+            color: white;
+        }
+
+        .pagination a.active {
+            background-color: #ff4500;
+            color: white;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Designs: Virtual Art Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <section id="gallery">
+        <h2>Explore Our Collection</h2>
+        <div class="gallery-container" id="artGallery">
+            <!-- Page 1 Artworks -->
+            <div class="art-item">
+                <img src="D:\nature images\Sunset Bliss.jpeg" alt="Sunset Bliss">
+                <h3>Sunset Bliss</h3>
+                <p>₹30000</p>
+                <button onclick="alert('You selected: Sunset Bliss for ₹30000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Mystic Mountains.jpeg" alt="Mystic Mountains">
+                <h3>Mystic Mountains</h3>
+                <p>₹50000</p>
+                <button onclick="alert('You selected: Mystic Mountains for ₹50000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Abstract Dreams.jpg" alt="Abstract Dreams">
+                <h3>Abstract Dreams</h3>
+                <p>₹25000</p>
+                <button onclick="alert('You selected: Abstract Dreams for ₹25000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Ocean View.jpeg" alt="Ocean View">
+                <h3>Ocean View</h3>
+                <p>₹40000</p>
+                <button onclick="alert('You selected: Ocean View for ₹40000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Golden Fields.jpeg" alt="Golden Fields">
+                <h3>Golden Fields</h3>
+                <p>₹35000</p>
+                <button onclick="alert('You selected: Golden Fields for ₹35000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Urban Lights.jpeg" alt="Urban Lights">
+                <h3>Urban Lights</h3>
+                <p>₹45000</p>
+                <button onclick="alert('You selected: Urban Lights for ₹45000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Autumn Leaves.jpeg" alt="Autumn Leaves">
+                <h3>Autumn Leaves</h3>
+                <p>₹32000</p>
+                <button onclick="alert('You selected: Autumn Leaves for ₹32000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Night Sky.jpeg" alt="Night Sky">
+                <h3>Night Sky</h3>
+                <p>₹55000</p>
+                <button onclick="alert('You selected: Night Sky for ₹55000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Mystic Forest.jpeg" alt="Mystic Forest">
+                <h3>Mystic Forest</h3>
+                <p>₹60000</p>
+                <button onclick="alert('You selected: Mystic Forest for ₹60000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Mountain Peaks.jpeg" alt="Mountain Peaks">
+                <h3>Mountain Peaks</h3>
+                <p>₹70000</p>
+                <button onclick="alert('You selected: Mountain Peaks for ₹70000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Serenity Lake.jpeg" alt="Serenity Lake">
+                <h3>Serenity Lake</h3>
+                <p>₹38000</p>
+                <button onclick="alert('You selected: Serenity Lake for ₹38000')">Buy Now</button>
+            </div>
+
+            <!-- Page 2 Artworks -->
+            <div class="art-item">
+                <img src="D:\nature images\Enchanted Woods.jpeg" alt="Enchanted Woods">
+                <h3>Enchanted Woods</h3>
+                <p>₹42000</p>
+                <button onclick="alert('You selected: Enchanted Woods for ₹42000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Desert Mirage.jpeg" alt="Desert Mirage">
+                <h3>Desert Mirage</h3>
+                <p>₹32000</p>
+                <button onclick="alert('You selected: Desert Mirage for ₹32000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Starry Voyage.jpeg" alt="Starry Voyage">
+                <h3>Starry Voyage</h3>
+                <p>₹45000</p>
+                <button onclick="alert('You selected: Starry Voyage for ₹45000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Wildflower Dreams.jpeg" alt="Wildflower Dreams">
+                <h3>Wildflower Dreams</h3>
+                <p>₹38000</p>
+                <button onclick="alert('You selected: Wildflower Dreams for ₹38000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Sakura Blossoms.jpeg" alt="Midnight Calm">
+                <h3>Midnight Calm</h3>
+                <p>₹40000</p>
+                <button onclick="alert('You selected: Midnight Calm for ₹40000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Radiant Plains.jpeg" alt="Whispering Wind">
+                <h3>Whispering Wind</h3>
+                <p>₹42000</p>
+                <button onclick="alert('You selected: Whispering Wind for ₹42000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Snow-Capped Mountains.jpeg" alt="Morning Mist">
+                <h3>Morning Mist</h3>
+                <p>₹38000</p>
+                <button onclick="alert('You selected: Morning Mist for ₹38000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Into the Wilderness.jpeg" alt="Serene Sunset">
+                <h3>Serene Sunset</h3>
+                <p>₹45000</p>
+                <button onclick="alert('You selected: Serene Sunset for ₹45000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Whimsical Meadows.jpeg" alt="Celestial Horizons">
+                <h3>Celestial Horizons</h3>
+                <p>₹50000</p>
+                <button onclick="alert('You selected: Celestial Horizons for ₹50000')">Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="D:\nature images\Moonlit Shores.jpeg" alt="Blossoms at Dusk">
+                <h3>Blossoms at Dusk</h3>
+                <p>₹35000</p>
+                <button onclick="alert('You selected: Blossoms at Dusk for ₹35000')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <a href="#gallery" id="page1Link" class="active">Page 1</a>
+        <a href="#gallery" id="page2Link">Page 2</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Designs. All rights reserved.</p>
+        <p>Designed with love and passion for art.</p>
+        <p>Contact Us: +91 8807052831</p>
+    </footer>
+
+    <script>
+        const artItems = document.querySelectorAll('.art-item');
+        const page1Items = Array.from(artItems).slice(0, 12);
+        const page2Items = Array.from(artItems).slice(12);
+
+        function displayPage(page) {
+            if (page === 1) {
+                page1Items.forEach(item => item.style.display = 'block');
+                page2Items.forEach(item => item.style.display = 'none');
+                document.getElementById('page1Link').classList.add('active');
+                document.getElementById('page2Link').classList.remove('active');
+            } else {
+                page1Items.forEach(item => item.style.display = 'none');
+                page2Items.forEach(item => item.style.display = 'block');
+                document.getElementById('page1Link').classList.remove('active');
+                document.getElementById('page2Link').classList.add('active');
+            }
+        }
+
+        document.getElementById('page1Link').addEventListener('click', () => displayPage(1));
+        document.getElementById('page2Link').addEventListener('click', () => displayPage(2));
+
+        // Initial display on load
+        displayPage(1);
+    </script>
+</body>
+
+</html>
